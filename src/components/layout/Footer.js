@@ -1,44 +1,40 @@
 import React from "react";
 import { Footer } from "react-materialize";
+import {Link} from "react-router-dom";
 
 const PageFooter = () => {
   return (
     <Footer
       className="grey darken-3"
-      copyrights="&copy 2015 Copyright Text"
+      copyrights="2020 Столовая Уголок"
       links={
         <ul>
           <li>
-            <a className="grey-text text-lighten-3" href="#!">
-              Link 1
-            </a>
+            <Link className="grey-text text-lighten-3" to="/">
+              Главная
+            </Link>
           </li>
           <li>
-            <a className="grey-text text-lighten-3" href="#!">
-              Link 2
-            </a>
+            <Link className="grey-text text-lighten-3" to="/menu">
+              Наше меню
+            </Link>
           </li>
           <li>
-            <a className="grey-text text-lighten-3" href="#!">
-              Link 3
-            </a>
+            <Link className="grey-text text-lighten-3" to="/services">
+              Услуги
+            </Link>
           </li>
           <li>
-            <a className="grey-text text-lighten-3" href="#!">
-              Link 4
-            </a>
+            <Link className="grey-text text-lighten-3" to="/contacts">
+              Контактная информация
+            </Link>
           </li>
         </ul>
       }
-      moreLinks={
-        <a className="grey-text text-lighten-4 right" href="#!">
-          More Links
-        </a>
-      }
     >
-      <h5 className="white-text">Footer Content</h5>
+      <h5 className="white-text">Столовая Уголок</h5>
       <p className="grey-text text-lighten-4">
-        You can use rows and columns here to organize your footer content.
+        Быстрая доставка комплексных обедов!
       </p>
     </Footer>
   );

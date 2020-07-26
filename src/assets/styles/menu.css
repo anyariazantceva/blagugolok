@@ -1,0 +1,12 @@
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
+}
+
+.our-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

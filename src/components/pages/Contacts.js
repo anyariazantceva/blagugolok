@@ -1,7 +1,14 @@
 import React from "react";
+import "../../assets/styles/menu.css";
+import bg from "../../assets/img/contacts.jpg";
+const sectionStyle = {
+  width: "100%",
+  height: "100vh",
+  backgroundColor: `white`,
+};
 
 const Contacts = () => {
-  return <div>This is Contacts page</div>;
+  return <div style={sectionStyle}>This is Contacts page</div>;
 };
 
 export default Contacts;

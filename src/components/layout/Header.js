@@ -7,7 +7,7 @@ import Logo from "../../assets/img/logo.png";
 const Header = () => {
   return (
     <Navbar
-      className="header grey darken-3"
+      className="header grey darken-3 z-depth-3"
       alignLinks="right"
       brand={
         <a className="brand-logo left" href="#">
@@ -30,7 +30,7 @@ const Header = () => {
         preventScrolling: true,
       }}
     >
-      <NavItem>
+      <NavItem to="/">
         <Link to="/">Главная</Link>
       </NavItem>
       <NavItem>
