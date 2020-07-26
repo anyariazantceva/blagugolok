@@ -2,15 +2,18 @@ import React from "react";
 import "../../assets/styles/header.css";
 import { Navbar, NavItem, Icon } from "react-materialize";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/img/logo.png";
 
 const Header = () => {
   return (
     <Navbar
-      className="header amber darken-1"
+      className="header grey darken-3"
       alignLinks="right"
       brand={
         <a className="brand-logo left" href="#">
-          Уголок
+          <div className="logo">
+            <img className="logo__image" src={Logo} alt="" />
+          </div>
         </a>
       }
       id="mobile-nav"

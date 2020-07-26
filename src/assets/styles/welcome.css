@@ -1,6 +1,7 @@
 .welcome-page {
     padding: 8rem 2rem;
     color: white;
+    background: url("");
 }
 
 .welcome-page__title {

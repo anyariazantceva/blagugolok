@@ -1,0 +1,10 @@
+.work_title-desc {
+    padding: 0 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work {
+    padding: 0 20px;
+}

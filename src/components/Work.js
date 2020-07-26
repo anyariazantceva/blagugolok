@@ -1,5 +1,7 @@
 import React from "react";
 import PageTitle from "./PageTitle";
+import WorkList from "./WorkList";
+import "../assets/styles/work.css";
 
 const Work = () => {
   return (
@@ -11,6 +13,7 @@ const Work = () => {
         veritatis vero voluptatibus! Fuga laboriosam tempora tenetur. Asperiores
         enim impedit ipsum odit quod?
       </div>
+      <WorkList />
     </div>
   );
 };

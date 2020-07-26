@@ -6,12 +6,12 @@ import OurMenu from "./components/pages/OurMenu";
 import Services from "./components/pages/Services";
 import Contacts from "./components/pages/Contacts";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Footer from "./components/layout/Footer";
+import PageFooter from "./components/layout/Footer";
 
 function App() {
   return (
     <Router>
-      <div className="grey lighten-5 page-wrapper">
+      <div className="grey lighten-4 page-wrapper">
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/services" component={Services} />
           <Route exact path="/contacts" component={Contacts} />
         </Switch>
-        <Footer />
+        <PageFooter />
       </div>
     </Router>
   );

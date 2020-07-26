@@ -1,0 +1,13 @@
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
