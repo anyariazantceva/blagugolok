@@ -10,11 +10,11 @@ const Header = () => {
       className="header grey darken-3 z-depth-3"
       alignLinks="right"
       brand={
-        <a className="brand-logo left" href="#">
+        <Link className="brand-logo left" to="/">
           <div className="logo">
             <img className="logo__image" src={Logo} alt="" />
           </div>
-        </a>
+        </Link>
       }
       id="mobile-nav"
       menuIcon={<Icon>menu</Icon>}
@@ -30,18 +30,10 @@ const Header = () => {
         preventScrolling: true,
       }}
     >
-      <NavItem to="/">
-        <Link to="/">Главная</Link>
-      </NavItem>
-      <NavItem>
-        <Link to="/menu">Наше меню</Link>
-      </NavItem>
-      <NavItem>
-        <Link to="/services">Услуги</Link>
-      </NavItem>
-      <NavItem>
-        <Link to="/contacts">Контакная информация</Link>
-      </NavItem>
+      <Link to="/">Главная</Link>
+      <Link to="/menu">Наше меню</Link>
+      <Link to="/services">Услуги</Link>
+      <Link to="/contacts">Контакная информация</Link>
     </Navbar>
   );
 };

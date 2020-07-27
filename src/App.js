@@ -7,12 +7,14 @@ import Services from "./components/pages/Services";
 import Contacts from "./components/pages/Contacts";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import PageFooter from "./components/layout/Footer";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
     <Router>
       <div className="grey lighten-4 page-wrapper">
         <Header />
+        <ScrollTop />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/menu" component={OurMenu} />

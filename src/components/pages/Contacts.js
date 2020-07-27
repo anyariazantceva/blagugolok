@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/styles/menu.css";
-import bg from "../../assets/img/contacts.jpg";
+
 const sectionStyle = {
   width: "100%",
   height: "100vh",
