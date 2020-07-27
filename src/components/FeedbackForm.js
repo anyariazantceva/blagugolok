@@ -21,7 +21,6 @@ const FeedbackForm = () => {
           inputClassName="form__input"
           id="TextInput-4"
           label="Email"
-          validate
         />
         <TextInput
           inputClassName="form__input"
