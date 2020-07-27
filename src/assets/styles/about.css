@@ -1,3 +1,9 @@
+.about {
+    background-color: white;
+    height: 550px;
+    padding-top: 60px;
+}
+
 .about__group {
     display: flex;
     flex-wrap: wrap;

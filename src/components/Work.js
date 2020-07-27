@@ -5,7 +5,7 @@ import "../assets/styles/work.css";
 
 const Work = () => {
   return (
-    <div className="work">
+    <section className="work page-section">
       <PageTitle text="Как мы работаем" />
       <div className="work_title-desc">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at
@@ -14,7 +14,7 @@ const Work = () => {
         enim impedit ipsum odit quod?
       </div>
       <WorkList />
-    </div>
+    </section>
   );
 };
 export default Work;

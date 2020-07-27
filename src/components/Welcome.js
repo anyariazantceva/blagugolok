@@ -11,12 +11,12 @@ const sectionStyle = {
 
 const Welcome = () => {
   return (
-    <div style={sectionStyle} className="welcome-page amber darken-1">
+    <section style={sectionStyle} className="welcome-page page-section">
       <h1 className="welcome-page__title">Столовая Уголок</h1>
       <div className="welcome-page__desc">
         Доставка комплексных обедов организациям по бюджетным ценам!
       </div>
-    </div>
+    </section>
   );
 };
 export default Welcome;

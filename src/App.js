@@ -12,7 +12,7 @@ import ScrollTop from "./components/ScrollTop";
 function App() {
   return (
     <Router>
-      <div className="grey lighten-4 page-wrapper">
+      <div className="grey lighten-5 page-wrapper">
         <Header />
         <ScrollTop />
         <Switch>

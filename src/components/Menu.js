@@ -10,7 +10,11 @@ const Menu = () => {
         <div className="menu__item-title">Салаты</div>
         <div className="menu__item-content">
           {salads.map((item) => {
-            return <div key={item.id}>{item.title}</div>;
+            return (
+              <div className="menu__item-name" key={item.id}>
+                {item.title}
+              </div>
+            );
           })}
         </div>
       </div>

@@ -16,12 +16,12 @@ const About = () => {
     {
       id: 3,
       text:
-        "Мы всегда предоставляем качественную и свежую еду по доступным\n" +
+        "Мы предоставляем качественную и свежую еду по доступным\n" +
         "            ценам! Комплексные обеды от 160 рублей.",
     },
   ]);
   return (
-    <div className="about">
+    <section className="about page-section">
       <PageTitle text="О нас" />
       <div className="about__group">
         {facts.map((fact) => {
@@ -32,7 +32,7 @@ const About = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
