@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/layout/Header";
 import Home from "./components/pages/Home";
@@ -11,6 +11,13 @@ import ScrollTop from "./components/ScrollTop";
 import { AnimatedSwitch } from "react-router-transition";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
   return (
     <Router>
       <div className="grey lighten-5 page-wrapper">

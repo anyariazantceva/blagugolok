@@ -10,19 +10,11 @@ const sectionStyle = {
 };
 
 const OurMenu = () => {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setLoading(false);
-  }, []);
-  if (loading) {
-    return <div>Loading</div>;
-  } else {
-    return (
-      <div style={sectionStyle} className="our-menu">
-        <PageTitle text="Наш ассортимент" />
-        <Menu />
-      </div>
-    );
-  }
+  return (
+    <div style={sectionStyle} className="our-menu">
+      <PageTitle text="Наш ассортимент" />
+      <Menu />
+    </div>
+  );
 };
 export default OurMenu;
