@@ -36,8 +36,12 @@ const MenuContextProvider = (props) => {
     { id: "se11", title: "Тефтели мясные с гарниром" },
     { id: "se12", title: "Голубец в листе с гарниром" },
   ]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(false);
+  }, []);
   return (
-    <MenuContext.Provider value={{ salads, seconds, firsts }}>
+    <MenuContext.Provider value={{ salads, seconds, firsts, loading }}>
       {props.children}
     </MenuContext.Provider>
   );

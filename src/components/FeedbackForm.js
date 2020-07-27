@@ -20,11 +20,6 @@ const FeedbackForm = () => {
         <TextInput
           inputClassName="form__input"
           id="TextInput-4"
-          label="Email"
-        />
-        <TextInput
-          inputClassName="form__input"
-          id="TextInput-4"
           placeholder="Телефон"
           required
         />

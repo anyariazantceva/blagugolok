@@ -5,7 +5,7 @@ import Home from "./components/pages/Home";
 import OurMenu from "./components/pages/OurMenu";
 import Services from "./components/pages/Services";
 import Contacts from "./components/pages/Contacts";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import PageFooter from "./components/layout/Footer";
 import ScrollTop from "./components/ScrollTop";
 import { AnimatedSwitch } from "react-router-transition";
@@ -17,9 +17,9 @@ function App() {
         <ScrollTop />
         <Header />
         <AnimatedSwitch
-          atEnter={{ opacity: 0, transitionDuration: 1000 }}
-          atLeave={{ opacity: 0, transitionDuration: 1000 }}
-          atActive={{ opacity: 1, transitionDuration: 1000 }}
+          atEnter={{ opacity: 0, transitionDuration: 10 }}
+          atLeave={{ opacity: 0, transitionDuration: 10 }}
+          atActive={{ opacity: 1, transitionDuration: 10 }}
           className="switch-wrapper"
         >
           <Route exact path="/" component={Home} />

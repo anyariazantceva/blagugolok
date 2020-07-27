@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PageTitle from "../PageTitle";
 import bg from "../../assets/img/whitebg.jpg";
 import Menu from "../Menu";
@@ -10,11 +10,19 @@ const sectionStyle = {
 };
 
 const OurMenu = () => {
-  return (
-    <div style={sectionStyle} className="our-menu">
-      <PageTitle text="Наш ассортимент" />
-      <Menu />
-    </div>
-  );
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(false);
+  }, []);
+  if (loading) {
+    return <div>Loading</div>;
+  } else {
+    return (
+      <div style={sectionStyle} className="our-menu">
+        <PageTitle text="Наш ассортимент" />
+        <Menu />
+      </div>
+    );
+  }
 };
 export default OurMenu;

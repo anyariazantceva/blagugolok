@@ -1,0 +1,9 @@
+.contacts__desc {
+    padding: 40px;
+    font-size: 18px;
+}
+
+.contacts__bold, .legal__title {
+    font-weight: bold;
+
+}
